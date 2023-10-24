@@ -23,12 +23,12 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 print("Welcome to Treasure island! \n Your mission is to find the treasure")
 
-cross_road = input("You are at a cross road, Please choose left or right \n")
+cross_road = input("You are at a cross road, Please choose left or right \n").lower()
 
 if cross_road == "left":
-    lake = input("You are at lake side. to get the other side of the what would you do swim or wait \n")
+    lake = input("You are at lake side. to get the other side of the what would you do swim or wait \n").lower()
     if lake == "wait":
-        castle = input("You are in front of a castle, and there is three doors. Red, yellow, blue, which one you wish to choose yellow, red or blue?\n")
+        castle = input("You are in front of a castle, and there is three doors. Red, yellow, blue, which one you wish to choose yellow, red or blue?\n").lower()
         if castle == "yellow":
             print("You Win!")
         elif castle == "red":
